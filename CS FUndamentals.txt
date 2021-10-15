@@ -1,0 +1,53 @@
+HashMap
+---------
+HashMap is a part of Java’s collection. 
+It provides the basic implementation of the Map interface of Java. 
+It stores the data in Key,Value pairs, and you can access them by an index of another type (e.g. an Integer). 
+One object is used as a key (index) to another object (value). 
+If you try to insert the duplicate key, it will replace the element of the corresponding key.
+
+The complexity of every operation except iteration is O(1). 
+
+HashMap vs HashSet
+
+1) HashMap implements Map interface and HashSet implements Set interface.
+
+2) HashMap requires two objects put(K key, V Value) to add an element to HashMap object, 
+while HashSet requires only one object add(Object o)
+
+
+              List	                                                              Set
+---------------------------------------------------------------------------------------------------------------------
+1. The List is an ordered sequence.	                                1. The Set is an unordered sequence.
+2. List allows duplicate elements	                                2. Set doesn’t allow duplicate elements.
+3. Elements by their position can be accessed.	                    3. Position access to elements is not allowed.
+4. Multiple null elements can be stored.	                        4. Null element can store only once.
+5. List implementations are ArrayList, LinkedList, Vector, Stack	5. Set implementations are HashSet, LinkedHashSet.
+
+
+
+Difference between Mutex and Semaphore
+---------------------------------------------------------------------------------------------------------------------
+Mutex uses a locking mechanism i.e. if a process wants to use a resource then it locks the resource, uses it and then release it. 
+But on the other hand, semaphore uses a signalling mechanism where wait() and signal() methods are used to show if a process is releasing a resource or taking a resource.
+
+A mutex is an object but semaphore is an integer variable.
+
+In semaphore, we have wait() and signal() functions. 
+But in mutex, there is no such function.
+
+A mutex object allows multiple process threads to access a single shared resource but only one at a time. 
+On the other hand, semaphore allows multiple process threads to access the finite instance of the resource until available.
+
+In mutex, the lock can be acquired and released by the same process at a time. 
+But the value of the semaphore variable can be modified by any process that needs some resource but only one process can change the value at a time.
+
+JVM
+-----------------
+JVM (Java Virtual Machine) is an abstract machine. It is a specification that provides runtime environment in which java bytecode can be executed. 
+JVMs are available for many hardware and software platforms (i.e. JVM is platform dependent).
+
+JIT
+-------
+The Just-In-Time (JIT) compiler is a component of the JRE (Java Runtime Environment) that improves the performance of Java applications at run time. 
+It helps improve the performance of Java programs by compiling bytecodes into native machine code at runtime .
