@@ -1,9 +1,0 @@
-In campaing periods, A lot of suppliers have been uploading at same time, 
-There was a alot of corrrenct process,
- When many users have started to upload their excel file at the same time,  the backend microservices which called by releated UI,
-was not able to respond.
-
-We have been validating every line of excel and this process take a time as sync.
-
-TThen I created async structure using rabbitmq, publsh queue than another microservice consume it, then validate.
-
